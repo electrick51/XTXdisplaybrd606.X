@@ -12,7 +12,7 @@
 #include "dfformat.h"
 #include "debugMessages.h"
 #include "sensor.h"
-
+//#include "mcc_generated_files/tmr3.h"
 #include "sysFunctions.h"
 
 #include "resources.h"
@@ -176,9 +176,9 @@ void update_sys_timers(void)
 static void status_manager_thread(void) 
 {
 
-    LED_Enable(LED_D3);
-    LED_Enable(LED_D4);
-    LED_Enable(LED_D5);
+//    LED_Enable(LED_D3);
+//    LED_Enable(LED_D4);
+//    LED_Enable(LED_D5);
     //    LED_Enable (LED_D6);
     static int LoopTimer2 = 0;
 
@@ -233,7 +233,7 @@ static void status_manager_thread(void)
             LoopTimer2 = 0;
         }
 
-        LED_On(LED_D7);
+//        LED_On(LED_D7);
         pevent_msg = status_message_get();
 
 //                sendText("statusMessageGet", 1, 0);
@@ -519,10 +519,10 @@ static void status_manager_thread(void)
         }// event_msg
         		if(timers_seconds_elapsed(sec_tic))
         		{
-        		   sec_tic = timers_seconds_get();
+//        		   sec_tic = timers_seconds_get();
         		   update_sys_timers();
         		}
-        LED_Off(LED_D7);
+//        LED_Off(LED_D7);
         context_switch(); //no message received so sleep for 100mS second - allow other threads to run
     }
 }

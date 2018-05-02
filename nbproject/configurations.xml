@@ -45,6 +45,8 @@
       <itemPath>sys_variables.c</itemPath>
       <itemPath>threads.c</itemPath>
       <itemPath>debugMessages.c</itemPath>
+      <itemPath>resources.c</itemPath>
+      <itemPath>dataflashSQI.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

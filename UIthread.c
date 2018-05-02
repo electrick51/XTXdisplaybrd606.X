@@ -109,10 +109,10 @@ void UI_message_init(void)
 static void UI_thread(void)
 {
     
-    LED_Enable (LED_D3);
-    LED_Enable (LED_D4);
-    LED_Enable (LED_D5);
-    LED_Enable (LED_D8);
+//    LED_Enable (LED_D3);
+//    LED_Enable (LED_D4);
+//    LED_Enable (LED_D5);
+//    LED_Enable (LED_D8);
     static int LoopTimer2 = 0;
     enum Keys keyValue;
     
@@ -129,7 +129,7 @@ static void UI_thread(void)
            
            LoopTimer2 = 0;
        }
-        LED_On(LED_D8);
+//        LED_On(LED_D8);
         pevent_msg = UI_message_get();
         
 //        sendText("UIMessageGet", 1, 0);
@@ -243,7 +243,7 @@ static void UI_thread(void)
 
                 }// switch	
 	}// event_msg
-		LED_Off(LED_D8);
+//		LED_Off(LED_D8);
 		context_switch();				            //no message received so sleep for 100mS second - allow other threads to run
 	}         
 }

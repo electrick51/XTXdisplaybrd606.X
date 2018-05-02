@@ -98,7 +98,7 @@ static void DebugMessage_thread(void)
     
     for(;;)
     {
-         LED_On(LED_D9);
+//         LED_On(LED_D9);
         peventMsg = DebugMessage_message_get();
         if(peventMsg)
         {
@@ -113,7 +113,7 @@ static void DebugMessage_thread(void)
             }
         }
         
-        LED_Off(LED_D9);
+//        LED_Off(LED_D9);
         context_switch();
     }
 }

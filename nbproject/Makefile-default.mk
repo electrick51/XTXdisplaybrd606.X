@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/tmr2.c mcc_generated_files/interrupt_manager.c mcc_generated_files/traps.c mcc_generated_files/tmr3.c mcc_generated_files/mcc.c main.c mcc_generated_files/pin_manager.c KeypadThread.c UIthread.c pnlComm.c queue.c statusmanager.c sys_variables.c threads.c debugMessages.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/tmr2.c mcc_generated_files/interrupt_manager.c mcc_generated_files/traps.c mcc_generated_files/tmr3.c mcc_generated_files/mcc.c main.c mcc_generated_files/pin_manager.c KeypadThread.c UIthread.c pnlComm.c queue.c statusmanager.c sys_variables.c threads.c debugMessages.c resources.c dataflashSQI.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/queue.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/threads.o ${OBJECTDIR}/debugMessages.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/mcc_generated_files/tmr2.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/tmr3.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/KeypadThread.o.d ${OBJECTDIR}/UIthread.o.d ${OBJECTDIR}/pnlComm.o.d ${OBJECTDIR}/queue.o.d ${OBJECTDIR}/statusmanager.o.d ${OBJECTDIR}/sys_variables.o.d ${OBJECTDIR}/threads.o.d ${OBJECTDIR}/debugMessages.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/queue.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/threads.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/dataflashSQI.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/uart2.o.d ${OBJECTDIR}/mcc_generated_files/uart3.o.d ${OBJECTDIR}/mcc_generated_files/tmr2.o.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/tmr3.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/KeypadThread.o.d ${OBJECTDIR}/UIthread.o.d ${OBJECTDIR}/pnlComm.o.d ${OBJECTDIR}/queue.o.d ${OBJECTDIR}/statusmanager.o.d ${OBJECTDIR}/sys_variables.o.d ${OBJECTDIR}/threads.o.d ${OBJECTDIR}/debugMessages.o.d ${OBJECTDIR}/resources.o.d ${OBJECTDIR}/dataflashSQI.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/queue.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/threads.o ${OBJECTDIR}/debugMessages.o
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/uart2.o ${OBJECTDIR}/mcc_generated_files/uart3.o ${OBJECTDIR}/mcc_generated_files/tmr2.o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/tmr3.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/main.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/KeypadThread.o ${OBJECTDIR}/UIthread.o ${OBJECTDIR}/pnlComm.o ${OBJECTDIR}/queue.o ${OBJECTDIR}/statusmanager.o ${OBJECTDIR}/sys_variables.o ${OBJECTDIR}/threads.o ${OBJECTDIR}/debugMessages.o ${OBJECTDIR}/resources.o ${OBJECTDIR}/dataflashSQI.o
 
 # Source Files
-SOURCEFILES=mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/tmr2.c mcc_generated_files/interrupt_manager.c mcc_generated_files/traps.c mcc_generated_files/tmr3.c mcc_generated_files/mcc.c main.c mcc_generated_files/pin_manager.c KeypadThread.c UIthread.c pnlComm.c queue.c statusmanager.c sys_variables.c threads.c debugMessages.c
+SOURCEFILES=mcc_generated_files/uart2.c mcc_generated_files/uart3.c mcc_generated_files/tmr2.c mcc_generated_files/interrupt_manager.c mcc_generated_files/traps.c mcc_generated_files/tmr3.c mcc_generated_files/mcc.c main.c mcc_generated_files/pin_manager.c KeypadThread.c UIthread.c pnlComm.c queue.c statusmanager.c sys_variables.c threads.c debugMessages.c resources.c dataflashSQI.c
 
 
 CFLAGS=
@@ -213,6 +213,20 @@ ${OBJECTDIR}/debugMessages.o: debugMessages.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  debugMessages.c  -o ${OBJECTDIR}/debugMessages.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/debugMessages.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/debugMessages.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
+${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/resources.o.d 
+	@${RM} ${OBJECTDIR}/resources.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  resources.c  -o ${OBJECTDIR}/resources.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/resources.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/dataflashSQI.o: dataflashSQI.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/dataflashSQI.o.d 
+	@${RM} ${OBJECTDIR}/dataflashSQI.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  dataflashSQI.c  -o ${OBJECTDIR}/dataflashSQI.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/dataflashSQI.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_REAL_ICE=1  -mno-eds-warn  -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/dataflashSQI.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
 else
 ${OBJECTDIR}/mcc_generated_files/uart2.o: mcc_generated_files/uart2.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
@@ -332,6 +346,20 @@ ${OBJECTDIR}/debugMessages.o: debugMessages.c  nbproject/Makefile-${CND_CONF}.mk
 	@${RM} ${OBJECTDIR}/debugMessages.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  debugMessages.c  -o ${OBJECTDIR}/debugMessages.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/debugMessages.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/debugMessages.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/resources.o: resources.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/resources.o.d 
+	@${RM} ${OBJECTDIR}/resources.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  resources.c  -o ${OBJECTDIR}/resources.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/resources.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/resources.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/dataflashSQI.o: dataflashSQI.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/dataflashSQI.o.d 
+	@${RM} ${OBJECTDIR}/dataflashSQI.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  dataflashSQI.c  -o ${OBJECTDIR}/dataflashSQI.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/dataflashSQI.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/dataflashSQI.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 

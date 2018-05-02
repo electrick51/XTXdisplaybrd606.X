@@ -196,6 +196,30 @@ void TMR3_SoftwareCounterClear(void)
     tmr3_obj.count = 0; 
 }
 
+
+/**
+ * Return the number of seconds elapsed between the current seconds value and
+ * the number of seconds passed as the 'start' parameter.
+ * @param start  the number of seconds from a past call
+ * @return the number of seconds elapsed
+ */
+uint16_t timers_seconds_elapsed(uint16_t start)
+{
+   return (tmr3_obj.count * 1000) - start; /* use unsigned wraparound */
+}
+
+uint16_t timers_milliseconds_elapsed(uint16_t start)
+{
+    return tmr3_obj.count - start; /* unsigned wraparound */    
+}    
+
+uint16_t timers_milliseconds_get(void)
+{
+    return tmr3_obj.count;
+}
+
+
+
 /**
  End of File
 */

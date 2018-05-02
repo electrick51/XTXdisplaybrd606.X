@@ -323,6 +323,13 @@ void TMR3_SoftwareCounterClear(void);
 
 #endif //_TMR3_H
     
+    
+uint16_t timers_seconds_get(void);
+uint16_t timers_seconds_elapsed(uint16_t start);
+uint16_t timers_milliseconds_elapsed(uint16_t start);
+uint16_t timers_milliseconds_get(void);
+
+    
 /**
  End of File
 */

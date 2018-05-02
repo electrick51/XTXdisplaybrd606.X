@@ -102,10 +102,10 @@ int main(void)
   // IO_RA3_SetHigh();
     
 //    printf("LED 9 is on");
-    BUTTON_Enable(BUTTON_S3);
-    BUTTON_Enable(BUTTON_S6);
-    BUTTON_Enable(BUTTON_S4);
-    
+//    BUTTON_Enable(BUTTON_S3);
+//    BUTTON_Enable(BUTTON_S6);
+//    BUTTON_Enable(BUTTON_S4);
+//    
     
     
     pnlComm_thread_init();
@@ -141,101 +141,101 @@ int main(void)
     while (1)
     {
 //        LED_On(LED_D4);
-         if(BUTTON_IsPressed(BUTTON_S3) && MessageSent == 0)
-        {
-             buildDebugMessage(&debugMsg, "Sending One Key\n\r", 1, 0, "MN");
-             debugMsg.tag = msg_debug_message;
-             DebugMessage_message_put(&debugMsg);
-             context_switch();
-//             sendText("Sending One key\n\r", 1, 0);
-             thread_wait(30);
-            event_msg.tag = msg_keypress;
-            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiOneKey;
-            UI_message_put(&event_msg);     
-            MessageSent = 1;
+//         if(BUTTON_IsPressed(BUTTON_S3) && MessageSent == 0)
+//        {
+//             buildDebugMessage(&debugMsg, "Sending One Key\n\r", 1, 0, "MN");
+//             debugMsg.tag = msg_debug_message;
+//             DebugMessage_message_put(&debugMsg);
+//             context_switch();
+////             sendText("Sending One key\n\r", 1, 0);
+//             thread_wait(30);
+//            event_msg.tag = msg_keypress;
+//            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiOneKey;
+//            UI_message_put(&event_msg);     
+//            MessageSent = 1;
+////           
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiTwoKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+////            thread_wait(50);
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiThreeKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+////            thread_wait(50);
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiFourKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+//             
+//             
+//        }
 //           
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiTwoKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-//            thread_wait(50);
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiThreeKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-//            thread_wait(50);
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiFourKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-             
-             
-        }
-           
-         if(BUTTON_IsPressed(BUTTON_S6) && MessageSent == 0)
-        {
-             buildDebugMessage(&debugMsg, "Sending Disarm Key\n\r", 1, 0, "MN");
-             debugMsg.tag = msg_debug_message;
-             DebugMessage_message_put(&debugMsg);
-             context_switch();
-//             sendText("Sending One key\n\r", 1, 0);
-             thread_wait(30);
+//         if(BUTTON_IsPressed(BUTTON_S6) && MessageSent == 0)
+//        {
+//             buildDebugMessage(&debugMsg, "Sending Disarm Key\n\r", 1, 0, "MN");
+//             debugMsg.tag = msg_debug_message;
+//             DebugMessage_message_put(&debugMsg);
+//             context_switch();
+////             sendText("Sending One key\n\r", 1, 0);
+//             thread_wait(30);
+////             thread_wait(10);
+//             event_msg.tag = msg_keypress;
+//            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiDisarmKey;
+//            UI_message_put(&event_msg);        
+////             status_message_put(event_msg);      
+//            MessageSent = 1;
+//             while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//             
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiOneKey;
+//            UI_message_put(&event_msg);     
+//            MessageSent = 1;
+////           
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiTwoKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+////            thread_wait(50);
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiThreeKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+////            thread_wait(50);
+//            while(MessageSent == 1){context_switch();}
+//             thread_wait(50);
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiFourKey;
+//            UI_message_put(&event_msg);      
+//            MessageSent = 1;
+//             
+//             
+//        }
+//           
+//         if(BUTTON_IsPressed(BUTTON_S4) && MessageSent == 0)
+//        {
+////             sendText("Sending Arm All key\n\r", 1, 0);
+//             buildDebugMessage(&debugMsg, "Sending Arm All key\n\r", 1, 0, "MN");
+//             debugMsg.tag = msg_debug_message;
+//             DebugMessage_message_put(&debugMsg);
+//             context_switch();
 //             thread_wait(10);
-             event_msg.tag = msg_keypress;
-            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiDisarmKey;
-            UI_message_put(&event_msg);        
-//             status_message_put(event_msg);      
-            MessageSent = 1;
-             while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-             
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiOneKey;
-            UI_message_put(&event_msg);     
-            MessageSent = 1;
-//           
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiTwoKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-//            thread_wait(50);
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiThreeKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-//            thread_wait(50);
-            while(MessageSent == 1){context_switch();}
-             thread_wait(50);
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiFourKey;
-            UI_message_put(&event_msg);      
-            MessageSent = 1;
-             
-             
-        }
-           
-         if(BUTTON_IsPressed(BUTTON_S4) && MessageSent == 0)
-        {
-//             sendText("Sending Arm All key\n\r", 1, 0);
-             buildDebugMessage(&debugMsg, "Sending Arm All key\n\r", 1, 0, "MN");
-             debugMsg.tag = msg_debug_message;
-             DebugMessage_message_put(&debugMsg);
-             context_switch();
-             thread_wait(10);
-             event_msg.tag = msg_keypress;
-            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
-            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiArmAllKey;
-            UI_message_put(&event_msg);        
-//             status_message_put(event_msg);      
-            MessageSent = 1;
-             
-             
-        }
+//             event_msg.tag = msg_keypress;
+//            event_msg.message_info.uplink_pkt.ulink_pkt_type = type_keypress;
+//            event_msg.message_info.uplink_pkt.uplink_pkts.key_value.keycode = uiArmAllKey;
+//            UI_message_put(&event_msg);        
+////             status_message_put(event_msg);      
+//            MessageSent = 1;
+//             
+//             
+//        }
            
 //        numBytes = 0;
         LoopTimes++;
