@@ -53,7 +53,7 @@
 #include "statusmanager.h"
 #include  "mcc_generated_files/pin_manager.h"
 #include "pnlComm.h"
-#include "mcc_generated_files/uart1.h"
+//#include "mcc_generated_files/uart1.h"
 #include "debugMessages.h"
 #include "buttons.h"
 #include "UIthread.h"
@@ -86,16 +86,16 @@ int main(void)
     DebugMessage_message_init();
     
     
-    LCD_Initialize();
-    
-    LED_Enable (LED_D9);
-    LED_Enable (LED_D3);
-    LED_Enable (LED_D4);
-    LED_Enable (LED_D5);
-    LED_Enable (LED_D6);
-    LED_Enable (LED_D7);
-    LED_Enable (LED_D8);
-    
+//    LCD_Initialize();
+//    
+//    LED_Enable (LED_D9);
+//    LED_Enable (LED_D3);
+//    LED_Enable (LED_D4);
+//    LED_Enable (LED_D5);
+//    LED_Enable (LED_D6);
+//    LED_Enable (LED_D7);
+//    LED_Enable (LED_D8);
+//    
 //    LED_On(LED_D9);
     printf( "\f" );   
 //    
@@ -140,7 +140,7 @@ int main(void)
         
     while (1)
     {
-        LED_On(LED_D4);
+//        LED_On(LED_D4);
          if(BUTTON_IsPressed(BUTTON_S3) && MessageSent == 0)
         {
              buildDebugMessage(&debugMsg, "Sending One Key\n\r", 1, 0, "MN");
@@ -266,7 +266,7 @@ int main(void)
         
        }
         
-        LED_Off(LED_D4);
+//        LED_Off(LED_D4);
         // Add your application code
         context_switch();
         

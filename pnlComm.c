@@ -8,14 +8,14 @@
 #include "xc.h"
 #include "queue.h"
 #include "debugMessages.h"
-#include "TouchscreenFiles/threads.h"
-#include "TouchscreenFiles/queue.h"
+#include "threads.h"
+#include "queue.h"
 #include "leds.h"
-#include "mcc_generated_files/uart1.h"
-#include "TouchscreenFiles/sys_variables.h"
+//#include "mcc_generated_files/uart1.h"
+#include "sys_variables.h"
 #include "pnlComm.h"
-#include "TouchscreenFiles/pnserial.h"
-#include "mcc_generated_files/uart1.h"
+#include "pnserial.h"
+//#include "mcc_generated_files/uart1.h"
 #include "mcc_generated_files/uart2.h"
 #include "sys_variables.h"
 
@@ -182,10 +182,10 @@ static void pnlComm_thread(void)
     uint16_t tmp;
     //***********************************************************
 
-    LED_Enable(LED_D3);
-    LED_Enable(LED_D4);
-    LED_Enable(LED_D5);
-    LED_Enable(LED_D6);
+//    LED_Enable(LED_D3);
+//    LED_Enable(LED_D4);
+//    LED_Enable(LED_D5);
+//    LED_Enable(LED_D6);
 
     static int LoopTimer3 = 0;
     uint8_t numbytes = 20;
@@ -197,7 +197,7 @@ static void pnlComm_thread(void)
 
     for (;;) 
     {
-        LED_On(LED_D5);
+//        LED_On(LED_D5);
         LoopTimer3++;
         if (LoopTimer3 > 16000) 
         {
@@ -284,7 +284,7 @@ static void pnlComm_thread(void)
 //            sendText(txdBuf, 2, 8);
 //            thread_wait(10);
 
-            LED_On(LED_D6);
+//            LED_On(LED_D6);
             //            while (attempts < 1)
             {
                 attempts++;
@@ -393,7 +393,7 @@ static void pnlComm_thread(void)
 
             } // ends while
             //
-            LED_Off(LED_D6);
+//            LED_Off(LED_D6);
             MessageSent = 0;
 
             //      releasePanelSerialChannel();
@@ -418,7 +418,7 @@ static void pnlComm_thread(void)
             context_switch();
         } // ends while(Qoutx!=Qinx)
 
-        LED_Off(LED_D5);
+//        LED_Off(LED_D5);
         context_switch();
     }
 }
@@ -466,14 +466,14 @@ void send100msPing(void)    // Called from 100 ms interrupt
     
     if(receiveBusy == 0)
     {
-            LED_On(LED_D6);
+//            LED_On(LED_D6);
 
             int numBytes = 0;
 
             numBytes = UART2_WriteBuffer(pingBuff, writeLen);
 
 
-            LED_Off(LED_D6);
+//            LED_Off(LED_D6);
             
             
              memset(&rxdBuf[0], 0, RX_BUFFER_SIZE);

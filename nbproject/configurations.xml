@@ -37,6 +37,14 @@
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
+      <itemPath>KeypadThread.c</itemPath>
+      <itemPath>UIthread.c</itemPath>
+      <itemPath>pnlComm.c</itemPath>
+      <itemPath>queue.c</itemPath>
+      <itemPath>statusmanager.c</itemPath>
+      <itemPath>sys_variables.c</itemPath>
+      <itemPath>threads.c</itemPath>
+      <itemPath>debugMessages.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -45,6 +53,9 @@
       <itemPath>MyConfig.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">

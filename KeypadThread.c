@@ -11,7 +11,7 @@
 
 #include "xc.h"
 
-#include "mcc_generated_files/uart4.h"
+//#include "mcc_generated_files/uart4.h"
 #include "threads.h"
 #include "queue.h"
 #include "KeypadThread.h"

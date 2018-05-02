@@ -7,4 +7,28 @@ mcc_generated_files/uart2.h  \
 mcc_generated_files/tmr2.h  \
  mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/traps.h  \
- mcc_generated_files/tmr3.h 
+ mcc_generated_files/tmr3.h  \
+leds.h  \
+lcd.h  \
+mcc_generated_files/tmr3.h  \
+ threads.h  \
+statusmanager.h  \
+sys_variables.h  \
+dlpktdef.h  \
+EXACTINT.h  \
+queue.h  \
+ exactint.h  \
+uimanager.h  \
+Timers.h  \
+keypress.h  \
+display.h  \
+ulpktdef.h  \
+sensor.h  \
+ rtcc.h  \
+mcc_generated_files/pin_manager.h  \
+pnlComm.h  \
+debugMessages.h  \
+ buttons.h  \
+UIthread.h  \
+KeypadThread.h  \
+ULPKTDEF.H 
